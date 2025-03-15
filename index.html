@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Yasar's Portfolio</title>
+    <link rel="icon" href="images/icon.png" type="image">
+
+    <style>
+        .icons:hover{
+            transform: scale(1.2);
+        }
+
+        nav{
+            z-index: 1;
+        }
+
+        .minor-project-1-a{
+            box-shadow: 1px 1px 10px 1px rgb(55, 54, 54);
+            border-radius: 10px;
+        }
+
+        .minor-project-1-a:hover{
+            transform: scale(1.07);
+        }
+
+        .minor-project-1-span a{
+            border-radius: 20px;
+        }
+
+        .minor-project-1-span:hover{
+            transform: scale(0.9);
+        }
+
+        .major-project-img:hover{
+            transform: scale(1.1);
+        }
+
+    </style>
+
+</head>
+<body>    
+
+    <div class="bg-black w-100 d-flex flex-column justify-content-center align-items-center">
+    
+        <!-- NAVBAR -->
+        <nav class="w-75 navbar bg-dark d-flex justify-content-center align-items-center mx-5 rounded-bottom" style="height: 75px; position: fixed; top: 0;">
+            <div class="pe-5">
+                <a class="text-decoration-none ps-5 pe-3 text-white" href="#h">Home</a>
+                <a class="text-decoration-none px-3 text-white" href="#t">Skills</a>
+                <a class="text-decoration-none px-3 text-white" href="#rw">Minor Projects</a>
+                <a class="text-decoration-none px-3 text-white" href="#cs">Major Projects</a>
+                <a class="text-decoration-none px-3 text-white" href="#git">Experience</a>
+            </div>
+
+            <div class="ps-5">
+                <a class="px-2" href="linkedin.com/in/yasar-mansuri-41507024a" target="_blank"><img class="" src="images/LinkedIn.png" width="40px" alt=""></a>
+                <a class="px-2" href="#"><img class="" src="images/github.png" width="45px" alt=""></a>
+                <a class="px-2 pe-5" href="#"><img class="" src="images/WhatsApp.png" width="30px" alt=""></a>
+            </div>
+        </nav>
+        
+        <!-- HOME -->
+        <div id="h" class="text-capitalize w-75 d-flex align-items-center mt-5 mb-5 pb-5">
+            <div class="text-white pt-5">
+                <p class="fs-1 fw-bolder">Mohammadyasar Mansuri.</p>
+                <p class="fs-5 lh-2 w-75 fw-lighter">Hello I Am Mohammadyasar. I Am a Web Devlopment Trainee, For knowing my skills, projects, experience check out my rest of the Portfolio.  </p>
+                <button class="py-4 w-25 m bg-success fs-5 text-white fw-bold">Let's Get Started</button>
+            </div>
+
+            <div class="text-white pt-5">
+                <img src="images/profile.png" style="border-radius: 100%; width: 290px;"> 
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Skills -->
+    <div id="t" class="pb-5 d-flex flex-column justify-content-center align-items-center bg-light text-dark">
+
+        <div class="pt-5 d-flex flex-column justify-content-center align-items-center">
+            <p class="fs-1 fw-bolder">Skills</p>
+            <p class="d-flex justify-content-center w-50 text-center">I have knowledge of these web devlopment skills. </p>
+        </div>
+        
+
+        <div class="d-flex justify-content-center align-items-center w-75" style="text-align: center; margin-left: 40px;">
+            <div class="shadow p-3 mb-5 rounded mx-5 icons">
+                <p class="fw-bolder">HTML</p>
+                <img class="" src="images/HTML-icon.png" width="100px" alt="HTML-icon">
+            </div>
+            
+            <div class="shadow p-3 mb-5 rounded mx-5 icons">
+                <p class="fw-bolder">CSS</p>
+                <img class="" src="images/CSS-icon.png" width="110px" alt="CSS-icon">
+            </div>
+
+            <div class="shadow p-3 mb-5 rounded mx-5 icons">
+                <p class="fw-bolder">JavaScript</p>
+                <img class="" src="images/JS-icon.png" width="110px" alt="JS-icon">
+            </div>
+    
+            <div class="shadow p-3 mb-5 rounded mx-5 icons">
+                <p class="fw-bolder">React JS</p>
+                <img class="" src="images/React-icon.png" width="120px" alt="React-icon">
+            </div>
+
+            <div class="shadow p-3 mb-5 rounded mx-5 icons">
+                <p class="fw-bolder">Bootstrap</p>
+                <img class="" src="images/Bootstap-icon.png" width="130px" alt="React-icon">
+            </div>            
+        </div>
+
+    </div>
+
+    <!-- Minor Projects -->
+    <div id="rw" class="p-5 d-flex align-items-center justify-content-center flex-column">
+        
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <p class="fs-1 fw-bolder">Minor Projects</p>
+            <p class="w-50 text-center">I have created some Minor Projects with my knowledge of web devlopment skills, which are..</p>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-evenly text-start w-75" style="margin-left: 90px;">
+            <div class="d-flex flex-column justify-content-center ">
+                <img class="pe-4" src="Mask group (3).png" alt="">
+                <p class="fs-1 fw-bolder">Otarea Educore Clone</p><hr style="margin-top: -12px;">
+                <a class="minor-project-1-a" style="width: 400px;" href="https://otarea-educore-clone.netlify.app/" target="_blank">
+                    <img src="images/otarea-sitepage.png" style="width: 400px; height: 210px; border-radius: 12px;" alt="otarea-sitepage">
+                </a>
+                <p class="" style="line-height: 3;">It is a Basic Page of Otarea Educore using HTML, CSS.</p>
+                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://otarea-educore-clone.netlify.app/" target="_blank">Check it out ></a></span>
+            </div>
+
+            <div class="d-flex flex-column justify-content-between">
+                <img class="pe-4" src="Mask group (3).png" alt="">
+                <p class="fs-1 fw-bolder">Portfolio Using Bootstrap.</p><hr style="margin-top: -12px;">
+                <a class="minor-project-1-a" style="width: 400px;" href="https://bootstrap-portfolio-gray.vercel.app/" target="_blank">
+                    <img src="images/minor-project-2-icon.png" style="width: 400px; height: 210px; border-radius: 12px;"  alt="otarea-sitepage">
+                </a>
+                <p class="" style="line-height: 3;">It is a Basic Portfolio Using HTML & Bootstrap.</p>
+                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://bootstrap-portfolio-gray.vercel.app/" target="_blank">Check it out ></a></span>
+            </div>
+        </div>
+
+    </div>
+ 
+    <!-- Major Projects -->
+    <div id="cs" class="w-100 bg-black text-white d-flex justify-content-center align-items-center flex-column">
+
+        <div class="d-flex text-capitalize flex-column justify-content-center align-items-center">
+            <p class="fs-1 text-center fw-bolder">Major Projects</p>
+            <p class="d-flex justify-content-center w-50 text-center">I have created some Major Projects with my knowledge of web devlopment skills, which are.. </p>    
+        </div>    
+
+        <div class="pt-5 w-50 d-flex justify-content-evenly align-items-center major-project-1-div">
+            <div>
+                <span class="p-1 rounded-3 text-black major-project-1-span" style="background-color: rgb(31, 133, 13);">Project-1</span>
+                <p class="fs-2">Spotify Clone.</p><hr style="width: 360px;">
+                <p class="w-75">It is a basic spotify UI for Home Page & Liked Songs Page Using HTML, CSS.</p>
+                <a class="border border-black text-decoration-none text-black p-2 minor-project-1-span" href="https://spotify-clone-liard-kappa.vercel.app/" target="_blank" style="border-radius: 20px; background-color: rgb(31, 133, 13);">Check it out ></a><br><br>
+                <a class="major-project-1-a2" href="https://www.figma.com/design/EBhnjMShbYAgpeGweiW1m3/Spotify-Clone?node-id=8-293&t=uPRTKBCgKo7iVaKQ-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+            </div>
+
+            <div>
+                <a href="https://spotify-clone-liard-kappa.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-1.png" width="400px" alt="spotify-clone"  style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
+            </div>
+        </div><hr style="width: 760px;">
+
+        <div class="pt-5 w-50 d-flex justify-content-evenly align-items-center">
+            <div>
+                <a href="https://responsive-web-page-nu.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-2.png" width="400px" alt="responsive-img" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
+            </div>
+
+            <div class="ps-5">
+                <span class="p-1 rounded-3 bg-primary">Project-2</span>
+                <p class="fs-2">Responsive Web Page</p><hr>
+                <p class="w-75">It is a Responsive Web Page for Mobile, Tablet using HTML and CSS-Media Query.</p>
+                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://responsive-web-page-nu.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
+                <a href="https://www.figma.com/design/EJG7TkLezxUaSHTgi2fqIr/F1---Monthly-Test?node-id=2-6&t=MSSLAf7octUUf0BU-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+            </div>
+        </div><hr style="width: 760px;">
+
+        <div class="pt-5  pb-5 w-50 d-flex justify-content-evenly align-items-center">
+            <div>
+                <span class="p-1 me-5 rounded-3 bg-success">Project-3</span>
+                <p class="fs-2">Blinkit Clone</p><hr style="width: 300px;">
+                <p class="w-75">It is a Blinkit Clone using HTML for Structure & Bootstrap and little bit inline CSS. </p>
+                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://blinkit-clone-teal.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
+                <a href="https://blinkit.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+            </div>
+
+            <div>
+                <a href="https://blinkit-clone-teal.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-3.png" width="420px" alt="" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
+            </div>
+        </div><hr style="width: 760px;">
+
+        <div class="pt-5 w-50 d-flex justify-content-evenly align-items-center">
+            <div>
+                <a href="https://google-sheet-clone-six.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-4.png" width="400px" alt="responsive-img" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
+            </div>
+
+            <div class="ps-5">
+                <span class="p-1 rounded-3 bg-primary">Project-4</span>
+                <p class="fs-2">Google Sheet Clone</p><hr>
+                <p class="w-75">It is a Google Sheet Clone using JavaScript DOM, HTML, CSS.</p>
+                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://google-sheet-clone-six.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
+                <a href="https://docs.google.com/spreadsheets/d/10fp30vp1JytmrGz7rnXX8d5xOCSmD-v5hQ4N3eFBcxs/edit?gid=0#gid=0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+            </div>
+        </div><hr style="width: 760px;">
+
+        <div class="pt-5  pb-5 w-50 d-flex justify-content-evenly align-items-center">
+            <div>
+                <span class="p-1 me-5 rounded-3">Project-5</span>
+                <p class="fs-2">YouTube Clone</p><hr style="width: 300px;">
+                <p class="w-75">It is a YouTube Clone using Asynchrounus & DOM JavaScript, HTML, CSS & Google Console APIs. </p>
+                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://you-tube-clone-five-opal.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
+                <a href="https://youtube.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+            </div>
+
+            <div>
+                <a href="https://you-tube-clone-five-opal.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-5.png" width="420px" alt="" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
+            </div>
+        </div><hr style="width: 760px;">
+
+    </div>
+
+    <!-- Experience -->
+    <div id="git" class="p-5 d-flex flex-column justify-content-center align-items-center bg-dark bg-gradient text-white">
+        
+        <div class="d-flex flex-column align-items-center">
+            <p class="fs-1 fw-bolder text-center">Experience</p>
+            <p class="fw-lighter d-flex justify-content-center align-items-center text-center w-75">Currently I Am a Web Devlopment Trainee at Acciojob Pvt Ltd. Also I Have Been Pursuing My Bachlours in Computer Applications At Parul University. </p><br>
+            <p class="fw-lighter d-flex justify-content-center align-items-center text-center w-75">If you want to contact me my contact details are provided below or you can go through my Social Media</p>
+        </div>
+
+        <div class="text-center pt-3 pb-3 bg-dark-subtle rounded-4 text-black w-50">
+            <div class="fs-3">
+                <p><label class="" for="email">E-mail  : </label> yasarmansuri16@gmail.com</p>
+                <!-- <input class="px-5 py-2 bg-warning" type="email" id="email" placeholder="Please enter your email"><br><br> -->
+            </div>
+            
+            <br>
+
+            <div class="fs-3">
+                <p><label for="mobile">Mobile : </label> 8200354426</p>
+                <!-- <input class="px-5 py-2 bg-warning" type="number" id="number" placeholder="Enter mobile"><br><br> -->
+            </div>
+            
+            <!-- <br> -->
+            <!-- <label for="textarea">Message</label><br>
+            <input class="px-5 py-2 bg-warning" type="text" id="msg" placeholder="Enter your message"><br><br> -->
+            <!-- <br> -->
+            <!-- <button class="bg-success py-2 px-4 text-white" type="submit">Submit ></button> -->
+        </div>
+
+    </div>
+
+</body>
+</html>
