@@ -12,7 +12,8 @@
 
         /* Media query for devices with max width of 768px (tablets and smaller) */
         @media (max-width: 768px) {
-        /* Navbar adjustments */
+            
+            /* Navbar adjustments */
             nav {
                 flex-direction: column;
                 height: auto;
@@ -24,6 +25,7 @@
             }
             nav a {
                 padding: 5px 0;
+                font-size: 14px;
             }
 
             /* Home section adjustments */
@@ -32,11 +34,12 @@
                 text-align: center;
             }
             #h img {
-                width: 200px;
+                width: 180px;
                 margin-top: 20px;
             }
             #h p {
-                width: 100%;
+                width: 90%;
+                font-size: 16px;
             }
 
             /* Skills section adjustments */
@@ -46,6 +49,10 @@
             }
             #t .icons {
                 margin: 10px 0;
+            }
+            #t .icons img {
+                width: 80px;
+                height: 80px;
             }
 
             /* Minor Projects adjustments */
@@ -57,6 +64,10 @@
                 width: 100%;
                 height: auto;
             }
+            #rw p {
+                font-size: 14px;
+                text-align: center;
+            }
 
             /* Major Projects adjustments */
             #cs .d-flex {
@@ -67,41 +78,25 @@
                 width: 100%;
                 height: auto;
             }
+            #cs p {
+                font-size: 14px;
+                text-align: center;
+            }
 
             /* Experience section adjustments */
             #git .card {
                 width: 90%;
                 margin: 10px 0;
             }
+            #git p {
+                font-size: 14px;
+                text-align: center;
+            }
 
             /* General anchor and button adjustments */
             a, button {
                 font-size: 14px;
-                padding: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-        /* Further reduce padding and font sizes for smaller screens */
-            body {
-                font-size: 14px;
-            }
-            nav a {
-                font-size: 12px;
-            }
-            #h p {
-                font-size: 16px;
-            }
-            #t .icons img {
-                width: 80px;
-                height: 80px;
-            }
-            #rw img, #cs img {
-                width: 100%;
-                height: auto;
-            }
-            #git .card {
-                font-size: 12px;
+                padding: 8px;
             }
         }
 
