@@ -4,10 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Yasar's Portfolio</title>
     <link rel="icon" href="images/icon.png" type="image">
 
     <style>
+
+        /* Media query for devices with max width of 768px (tablets and smaller) */
+        @media (max-width: 768px) {
+            /* Navbar adjustments */
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+            nav div {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 5px 0;
+            }
+
+            /* Home section adjustments */
+            #h {
+                flex-direction: column;
+                text-align: center;
+            }
+            #h img {
+                width: 200px;
+                margin-top: 20px;
+            }
+            #h p {
+                width: 100%;
+            }
+
+            /* Skills section adjustments */
+            #t .d-flex {
+                flex-direction: column;
+                align-items: center;
+            }
+            #t .icons {
+                margin: 10px 0;
+            }
+
+            /* Minor Projects adjustments */
+            #rw .d-flex {
+                flex-direction: column;
+                align-items: center;
+            }
+            #rw img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Major Projects adjustments */
+            #cs .d-flex {
+                flex-direction: column;
+                align-items: center;
+            }
+            #cs img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Experience section adjustments */
+            #git .card {
+                width: 90%;
+                margin: 10px 0;
+            }
+
+            /* General anchor and button adjustments */
+            a, button {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+
+        /* General styles for responsiveness */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* Add hover effect for all anchor tags */
+        a:hover {
+            transform: scale(1.1); /* Slightly enlarge the element */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+        }
+
+        /* Add hover effect for all buttons */
+        button:hover {
+            transform: scale(1.1); /* Slightly enlarge the button */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+        }
+
         .icons:hover{
             transform: scale(1.2);
         }
@@ -54,10 +149,11 @@
                 <a class="text-decoration-none px-3 text-white" href="#git">Experience</a>
             </div>
 
-            <div class="ps-5">
-                <a class="px-2" href="linkedin.com/in/yasar-mansuri-41507024a" target="_blank"><img class="" src="images/LinkedIn.png" width="40px" alt=""></a>
-                <a class="px-2" href="https://github.com/Mohammadyasar303" target="_blank"><img class="" src="images/github.png" width="45px" alt=""></a>
-                <a class="px-2 pe-5" href="https://wa.me/+918200354426" target="_blank"><img class="" src="images/WhatsApp.png" width="30px" alt=""></a>
+            <div class="ps-5 d-flex align-items-center">
+                <a class="px-3" href="https://linkedin.com/in/yasar-mansuri-41507024a" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #e6e6e6;"></i></a>
+                <a class="px-3" href="https://github.com/Mohammadyasar303" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #fcfcfc;"></i></a>
+                <a class="px-3" href="mailto:yasarmansuri16@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i></a>
+                <!-- <a class="px-2 pe-5" href="https://wa.me/+918200354426" target="_blank"><img class="" src="images/WhatsApp.png" width="30px" alt=""></a> -->
             </div>
         </nav>
         
@@ -85,31 +181,41 @@
         </div>
         
 
-        <div class="d-flex justify-content-center align-items-center w-75" style="text-align: center; margin-left: 40px;">
+        <div class="d-flex justify-content-center align-items-center w-75 flex-wrap" style="text-align: center; margin-left: 40px;">
             <div class="shadow p-3 mb-5 rounded mx-5 icons">
                 <p class="fw-bolder">HTML</p>
-                <img class="" src="images/HTML-icon.png" width="100px" alt="HTML-icon">
+                <img class="" src="images/HTML-icon.png" width="100px" height="100px" alt="HTML-icon">
             </div>
             
             <div class="shadow p-3 mb-5 rounded mx-5 icons">
                 <p class="fw-bolder">CSS</p>
-                <img class="" src="images/CSS-icon.png" width="110px" alt="CSS-icon">
+                <img class="" src="images/CSS-icon.png" width="100px" height="100px" alt="CSS-icon">
             </div>
 
             <div class="shadow p-3 mb-5 rounded mx-5 icons">
                 <p class="fw-bolder">JavaScript</p>
-                <img class="" src="images/JS-icon.png" width="110px" alt="JS-icon">
+                <img class="" src="images/JS-icon.png" width="100px" height="100px" alt="JS-icon">
             </div>
     
             <div class="shadow p-3 mb-5 rounded mx-5 icons">
                 <p class="fw-bolder">React JS</p>
-                <img class="" src="images/React-icon.png" width="120px" alt="React-icon">
-            </div>
+                <img class="" src="images/React-icon.png" width="120px" height="100px" alt="React-icon">
+            </div><br>
 
             <div class="shadow p-3 mb-5 rounded mx-5 icons">
                 <p class="fw-bolder">Bootstrap</p>
-                <img class="" src="images/Bootstap-icon.png" width="130px" alt="React-icon">
-            </div>            
+                <img class="" src="images/Bootstap-icon.png" width="130px" height="100px" alt="React-icon">
+            </div>     
+            
+            <div class="shadow p-3 mb-5 rounded mx-5 icons">
+                <p class="fw-bolder">Node.js</p>
+                <img class="" src="images/nodeJS-icon.png" width="130px" height="100px" alt="React-icon">
+            </div>
+
+            <div class="shadow p-3 mb-5 rounded mx-5 icons">
+                <p class="fw-bolder">mongoDB</p>
+                <img class="" src="images/MongoDB-icon.png" width="130px" height="100px" alt="React-icon">
+            </div>
         </div>
 
     </div>
@@ -228,33 +334,51 @@
 
     <!-- Experience -->
     <div id="git" class="p-5 d-flex flex-column justify-content-center align-items-center bg-dark bg-gradient text-white">
-        
-        <div class="d-flex flex-column align-items-center">
-            <p class="fs-1 fw-bolder text-center">Experience</p>
-            <p class="fw-lighter d-flex justify-content-center align-items-center text-center w-75">Currently I Am a Web Devlopment Trainee at Acciojob Pvt Ltd. Also I Have Been Pursuing My Bachlours in Computer Applications At Parul University. </p><br>
-            <p class="fw-lighter d-flex justify-content-center align-items-center text-center w-75">If you want to contact me my contact details are provided below or you can go through my Social Media</p>
+        <div class="d-flex flex-column align-items-center text-center">
+            <p class="fs-1 fw-bolder mb-4">Experience</p>
+            <p class="fw-light w-75 mb-3">
+                I am currently working as a <span class="fw-bold">Web Development Trainee</span> at <span class="fw-bold">Acciojob Pvt Ltd</span>. 
+                Additionally, I am pursuing my <span class="fw-bold">Bachelor's in Computer Applications</span> at <span class="fw-bold">Parul University</span>.
+            </p>
+            <p class="fw-light w-75">
+                Feel free to reach out to me using the contact details below or through my social media links.
+            </p>
         </div>
 
-        <div class="text-center pt-3 pb-3 bg-dark-subtle rounded-4 text-black w-50">
-            <div class="fs-3">
-                <p><label class="" for="email">E-mail  : </label> yasarmansuri16@gmail.com</p>
-                <!-- <input class="px-5 py-2 bg-warning" type="email" id="email" placeholder="Please enter your email"><br><br> -->
+        <div class="d-flex flex-wrap justify-content-center align-items-center mt-4">
+            <!-- Card 1 -->
+            <div class="card text-dark bg-light m-3" style="width: 18rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <div class="card-body text-center">
+                    <i class="fa-solid fa-briefcase fa-2x mb-3" style="color: #007bff;"></i>
+                    <h5 class="card-title fw-bold">Web Development Trainee</h5>
+                    <p class="card-text">Acciojob Pvt Ltd</p>
+                </div>
             </div>
-            
-            <br>
 
-            <div class="fs-3">
-                <p><label for="mobile">Mobile : </label> 8200354426</p>
-                <!-- <input class="px-5 py-2 bg-warning" type="number" id="number" placeholder="Enter mobile"><br><br> -->
+            <!-- Card 2 -->
+            <div class="card text-dark bg-light m-3" style="width: 18rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <div class="card-body text-center">
+                    <i class="fa-solid fa-graduation-cap fa-2x mb-3" style="color: #28a745;"></i>
+                    <h5 class="card-title fw-bold">Bachelor's in Computer Applications</h5>
+                    <p class="card-text">Parul University</p>
+                </div>
             </div>
-            
-            <!-- <br> -->
-            <!-- <label for="textarea">Message</label><br>
-            <input class="px-5 py-2 bg-warning" type="text" id="msg" placeholder="Enter your message"><br><br> -->
-            <!-- <br> -->
-            <!-- <button class="bg-success py-2 px-4 text-white" type="submit">Submit ></button> -->
         </div>
 
+        <div class="text-center mt-5">
+            <p class="fs-5 mb-3">Contact Me:</p>
+            <div class="d-flex justify-content-center">
+                <a class="px-3" href="mailto:yasarmansuri16@gmail.com" target="_blank">
+                    <i class="fa-regular fa-envelope fa-2x" style="color: #ffffff;"></i>
+                </a>
+                <a class="px-3" href="https://linkedin.com/in/yasar-mansuri-41507024a" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-2x" style="color: #0077b5;"></i>
+                </a>
+                <a class="px-3" href="https://github.com/Mohammadyasar303" target="_blank">
+                    <i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
 </body>
