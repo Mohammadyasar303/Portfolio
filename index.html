@@ -13,7 +13,9 @@
         /* Media query for devices with max width of 768px (tablets and smaller) */
         @media (max-width: 768px) {
             
-            
+            #nav-bar{
+                display: none !important;
+            }
 
         }
 
@@ -69,7 +71,7 @@
     <div class="bg-black w-100 d-flex flex-column justify-content-center align-items-center">
     
         <!-- NAVBAR -->
-        <nav class="w-75 navbar bg-dark d-flex justify-content-center align-items-center mx-5 rounded-bottom" style="height: 75px; position: fixed; top: 0;">
+        <nav id="nav-bar" class="w-75 navbar bg-dark d-flex justify-content-center align-items-center mx-5 rounded-bottom" style="height: 75px; position: fixed; top: 0;">
             <div class="pe-5">
                 <a class="text-decoration-none ps-5 pe-3 text-white" href="#h">Home</a>
                 <a class="text-decoration-none px-3 text-white" href="#t">Skills</a>
