@@ -83,10 +83,16 @@
                 display: flex !important;
                 flex-direction: column !important;
             }
+
+            .major-whole hr{
+                width: 96% !important;
+                margin-top: -15px !important;
+            }
             
             .major-whole{
                 width: 100% !important;
                 margin-left : 0px !important;
+                margin-top: -19px;
             }
 
             .major-whole img{
@@ -107,6 +113,31 @@
 
             .major-text-p2{
                 width: 95% !important;
+            }
+
+            .major-text-p0{
+                width: 75% !important;
+            }
+
+            .skill-all{
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                align-items: center !important;
+                margin-right: 40px;
+            }
+
+            .skill-all img{
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            .skill-all div{
+                padding: 1px 1px 10px 5px !important;
+                margin: 1px 1px 10px 5px !important;
+            }
+
+            .skill-p1{
+                width: 60% !important;
             }
         }
 
@@ -233,11 +264,11 @@
 
         <div class="pt-5 d-flex flex-column justify-content-center align-items-center">
             <p class="fs-1 fw-bolder">Skills</p>
-            <p class="d-flex justify-content-center w-50 text-center">I have knowledge of these web devlopment skills. </p>
+            <p class="d-flex justify-content-center w-50 text-center skill-p1">I have knowledge of these web devlopment skills. </p>
         </div>
         
 
-        <div class="d-flex justify-content-center align-items-center w-75 flex-wrap" style="text-align: center; margin-left: 40px;">
+        <div class="d-flex justify-content-center align-items-center w-75 flex-wrap skill-all" style="text-align: center; margin-left: 40px;">
             <div class="shadow p-3 mb-5 rounded mx-5 icons">
                 <p class="fw-bolder">HTML</p>
                 <img class="" src="images/HTML-icon.png" width="100px" height="100px" alt="HTML-icon">
@@ -281,7 +312,7 @@
 
         <div class="d-flex text-capitalize flex-column justify-content-center align-items-center">
             <p class="fs-1 text-center fw-bolder">Major Projects</p>
-            <p class="d-flex justify-content-center w-50 text-center">I have created some Major Projects with my knowledge of web devlopment skills, which are.. </p>    
+            <p class="d-flex justify-content-center w-50 text-center major-text-p0">I have created some Major Projects with my knowledge of web devlopment skills, which are.. </p>    
         </div>    
 
         <div id="mp" class="pt-5  pb-5 w-50 d-flex justify-content-evenly align-items-center major-whole major-odd">
