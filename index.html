@@ -17,10 +17,56 @@
                 display: none !important;
             }
 
-            #h{
+            #home{
+                width: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+            }
+
+            #home-text p{
                 width: 100% !important;
             }
 
+            /* #major-projects #mp{
+                width: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+            } */
+
+            #mp{
+                width: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: start !important;
+            }
+
+            #mp img{
+                width: 95% !important;
+                align-items: center !important;
+                height: auto !important;
+            }
+
+            html, body {
+            overflow-x: hidden;
+            }
+
+            #minor{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }            
+
+            .minor-project-1-a img{
+                width: 100% !important;
+                height: 180px !important;
+            }
+
+            .minor-project-1-a{
+                width: 350px !important;
+                margin-right: 90px !important;
+                display: flex;
+                justify-content: center;
+            }
         }
 
 
@@ -93,14 +139,14 @@
         </nav>
         
         <!-- HOME -->
-        <div id="h" class="text-capitalize w-50 d-flex align-items-center mt-5 mb-5 pb-5">
-            <div class="text-white pt-5">
-                <p class="fs-1 fw-bolder">Mohammadyasar Mansuri.</p>
-                <p class="fs-5 lh-2 w-75 fw-lighter">Hello I Am Mohammadyasar. I Am a Web Devlopment Trainee, For knowing my skills, projects, experience you can go through my Resume or you can check out my rest of the Portfolio.  </p>
+        <div id="home" class="text-capitalize w-50 d-flex align-items-center mt-5 mb-5 pb-5">
+            <div id="home-text" class="text-white pt-5">
+                <!-- <p class="fs-1 fw-bolder">Mohammadyasar Mansuri.</p> -->
+                <p class="fs-5 lh-2 w-75 fw-lighter">Hello, I Am <b>Mohammadyasar Mansuri</b>.</br></br> I Am a MERN Developer, For knowing my skills, projects, experience you can go through my Resume or you can check out my rest of the Portfolio.  </p>
                 <a href="https://resume-virid-kappa-66.vercel.app/" download="Mohammadyasar_SD_Resume.pdf" target="_blank" class="text-decoration-none rounded-3 py-2 px-4 m bg-success fs-5 text-white fw-bold">My Resume</a>
             </div>
 
-            <div class="text-white pt-5">
+            <div id="home-img" class="text-white pt-5">
                 <img src="images/profile.png" style="border-radius: 100%; width: 190px;"> 
             </div>
         </div>
@@ -188,90 +234,32 @@
         </div>
 
     </div>
-
-    <!-- Minor Projects -->
-    <div id="rw" class="p-5 d-flex align-items-center justify-content-center flex-column">
-        
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <p class="fs-1 fw-bolder">Minor Projects</p>
-            <p class="w-50 text-center">I have created some Minor Projects with my knowledge of web devlopment skills, which are..</p>
-        </div>
-
-        <div class="d-flex align-items-center justify-content-evenly text-start w-75" style="margin-left: 90px;">
-            <div class="d-flex flex-column justify-content-center ">
-                <img class="pe-4" src="Mask group (3).png" alt="">
-                <p class="fs-1 fw-bolder">Otarea Educore Clone</p><hr style="margin-top: -12px;">
-                <a class="minor-project-1-a" style="width: 400px;" href="https://otarea-educore-clone.netlify.app/" target="_blank">
-                    <img src="images/otarea-sitepage.png" style="width: 400px; height: 210px; border-radius: 12px;" alt="otarea-sitepage">
-                </a>
-                <p class="" style="line-height: 3;">It is a Basic Page of Otarea Educore using HTML, CSS.</p>
-                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://otarea-educore-clone.netlify.app/" target="_blank">Check it out ></a></span>
-            </div>
-
-            <div class="d-flex flex-column justify-content-between">
-                <img class="pe-4" src="Mask group (3).png" alt="">
-                <p class="fs-1 fw-bolder">Portfolio Using Bootstrap.</p><hr style="margin-top: -12px;">
-                <a class="minor-project-1-a" style="width: 400px;" href="https://bootstrap-portfolio-gray.vercel.app/" target="_blank">
-                    <img src="images/minor-project-2-icon.png" style="width: 400px; height: 210px; border-radius: 12px;"  alt="otarea-sitepage">
-                </a>
-                <p class="" style="line-height: 3;">It is a Basic Portfolio Using HTML & Bootstrap.</p>
-                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://bootstrap-portfolio-gray.vercel.app/" target="_blank">Check it out ></a></span>
-            </div>
-        </div>
-
-    </div>
- 
+    
     <!-- Major Projects -->
-    <div id="cs" class="w-100 bg-black text-white d-flex justify-content-center align-items-center flex-column">
+    <div id="cs major-projects" class="w-100 bg-black text-white d-flex justify-content-center align-items-center flex-column">
 
         <div class="d-flex text-capitalize flex-column justify-content-center align-items-center">
             <p class="fs-1 text-center fw-bolder">Major Projects</p>
             <p class="d-flex justify-content-center w-50 text-center">I have created some Major Projects with my knowledge of web devlopment skills, which are.. </p>    
         </div>    
 
-        <div class="pt-5 w-50 d-flex justify-content-evenly align-items-center major-project-1-div">
+        <div id="mp" class="pt-5  pb-5 w-50 d-flex justify-content-evenly align-items-center">
             <div>
-                <span class="p-1 rounded-3 text-black major-project-1-span" style="background-color: rgb(31, 133, 13);">Project-1</span>
-                <p class="fs-2">Spotify Clone.</p><hr style="width: 360px;">
-                <p class="w-75">It is a basic spotify UI for Home Page & Liked Songs Page Using HTML, CSS.</p>
-                <a class="border border-black text-decoration-none text-black p-2 minor-project-1-span" href="https://spotify-clone-liard-kappa.vercel.app/" target="_blank" style="border-radius: 20px; background-color: rgb(31, 133, 13);">Check it out ></a><br><br>
-                <a class="major-project-1-a2" href="https://www.figma.com/design/EBhnjMShbYAgpeGweiW1m3/Spotify-Clone?node-id=8-293&t=uPRTKBCgKo7iVaKQ-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+                <span class="p-1 me-5 rounded-3">Project-5</span>
+                <p class="fs-2">YouTube Clone</p><hr style="width: 300px;">
+                <p class="w-75">It is a YouTube Clone using Asynchrounus & DOM JavaScript, HTML, CSS & Google Console APIs. </p>
+                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://you-tube-clone-five-opal.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
+                <a href="https://youtube.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
             </div>
 
             <div>
-                <a href="https://spotify-clone-liard-kappa.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-1.png" width="400px" alt="spotify-clone"  style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
+                <a href="https://you-tube-clone-five-opal.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-5.png" width="420px" alt="" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
             </div>
         </div><hr style="width: 760px;">
 
-        <div class="pt-5 w-50 d-flex justify-content-evenly align-items-center">
-            <div>
-                <a href="https://responsive-web-page-nu.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-2.png" width="400px" alt="responsive-img" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
-            </div>
+        
 
-            <div class="ps-5">
-                <span class="p-1 rounded-3 bg-primary">Project-2</span>
-                <p class="fs-2">Responsive Web Page</p><hr>
-                <p class="w-75">It is a Responsive Web Page for Mobile, Tablet using HTML and CSS-Media Query.</p>
-                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://responsive-web-page-nu.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
-                <a href="https://www.figma.com/design/EJG7TkLezxUaSHTgi2fqIr/F1---Monthly-Test?node-id=2-6&t=MSSLAf7octUUf0BU-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
-            </div>
-        </div><hr style="width: 760px;">
-
-        <div class="pt-5  pb-5 w-50 d-flex justify-content-evenly align-items-center">
-            <div>
-                <span class="p-1 me-5 rounded-3 bg-success">Project-3</span>
-                <p class="fs-2">Blinkit Clone</p><hr style="width: 300px;">
-                <p class="w-75">It is a Blinkit Clone using HTML for Structure & Bootstrap and little bit inline CSS. </p>
-                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://blinkit-clone-teal.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
-                <a href="https://blinkit.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
-            </div>
-
-            <div>
-                <a href="https://blinkit-clone-teal.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-3.png" width="420px" alt="" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
-            </div>
-        </div><hr style="width: 760px;">
-
-        <div class="pt-5 w-50 d-flex justify-content-evenly align-items-center">
+        <div id="mp" class="pt-5 w-50 d-flex justify-content-evenly align-items-center">
             <div>
                 <a href="https://google-sheet-clone-six.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-4.png" width="400px" alt="responsive-img" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
             </div>
@@ -285,19 +273,76 @@
             </div>
         </div><hr style="width: 760px;">
 
-        <div class="pt-5  pb-5 w-50 d-flex justify-content-evenly align-items-center">
+        <div id="mp" class="pt-5  pb-5 w-50 d-flex justify-content-evenly align-items-center">
             <div>
-                <span class="p-1 me-5 rounded-3">Project-5</span>
-                <p class="fs-2">YouTube Clone</p><hr style="width: 300px;">
-                <p class="w-75">It is a YouTube Clone using Asynchrounus & DOM JavaScript, HTML, CSS & Google Console APIs. </p>
-                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://you-tube-clone-five-opal.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
-                <a href="https://youtube.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+                <span class="p-1 me-5 rounded-3 bg-success">Project-3</span>
+                <p class="fs-2">Blinkit Clone</p><hr style="width: 300px;">
+                <p class="w-75">It is a Blinkit Clone using HTML for Structure & Bootstrap and little bit inline CSS. </p>
+                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://blinkit-clone-teal.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
+                <a href="https://blinkit.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
             </div>
 
             <div>
-                <a href="https://you-tube-clone-five-opal.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-5.png" width="420px" alt="" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
+                <a href="https://blinkit-clone-teal.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-3.png" width="420px" alt="" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
             </div>
         </div><hr style="width: 760px;">
+
+        <div id="mp" class="pt-5 w-50 d-flex justify-content-evenly align-items-center">
+            <div>
+                <a href="https://responsive-web-page-nu.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-2.png" width="400px" alt="responsive-img" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
+            </div>
+
+            <div class="ps-5">
+                <span class="p-1 rounded-3 bg-primary">Project-2</span>
+                <p class="fs-2">Responsive Web Page</p><hr>
+                <p class="w-75">It is a Responsive Web Page for Mobile, Tablet using HTML and CSS-Media Query.</p>
+                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://responsive-web-page-nu.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
+                <a href="https://www.figma.com/design/EJG7TkLezxUaSHTgi2fqIr/F1---Monthly-Test?node-id=2-6&t=MSSLAf7octUUf0BU-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+            </div>
+        </div><hr style="width: 760px;">
+
+        <div id="mp" class="pt-5 w-50 d-flex justify-content-evenly align-items-center major-project-1-div">
+            <div>
+                <span class="p-1 rounded-3 text-black major-project-1-span" style="background-color: rgb(31, 133, 13);">Project-1</span>
+                <p class="fs-2">Spotify Clone.</p><hr style="width: 360px;">
+                <p class="w-75">It is a basic spotify UI for Home Page & Liked Songs Page Using HTML, CSS.</p>
+                <a class="border border-black text-decoration-none text-black p-2 minor-project-1-span" href="https://spotify-clone-liard-kappa.vercel.app/" target="_blank" style="border-radius: 20px; background-color: rgb(31, 133, 13);">Check it out ></a><br><br>
+                <a class="major-project-1-a2" href="https://www.figma.com/design/EBhnjMShbYAgpeGweiW1m3/Spotify-Clone?node-id=8-293&t=uPRTKBCgKo7iVaKQ-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+            </div>
+
+            <div>
+                <a href="https://spotify-clone-liard-kappa.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-1.png" width="400px" alt="spotify-clone"  style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
+            </div>
+        </div><hr style="width: 760px;">
+    </div>
+
+    <!-- Minor Projects -->
+    <div id="rw" class="p-5 d-flex align-items-center justify-content-center flex-column">
+        
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <p class="fs-1 fw-bolder">Minor Projects</p>
+            <p class="w-50 text-center">I have created some Minor Projects with my knowledge of web devlopment skills, which are..</p>
+        </div>
+
+        <div id="minor" class="d-flex align-items-center justify-content-evenly text-start w-75" style="margin-left: 90px;">
+            <div class="d-flex flex-column justify-content-center ">
+                <p class="fs-1 fw-bolder">Otarea Educore Clone</p><hr style="margin-top: -12px;">
+                <a class="minor-project-1-a" style="width: 400px;" href="https://otarea-educore-clone.netlify.app/" target="_blank">
+                    <img src="images/otarea-sitepage.png" style="width: 400px; height: 210px; border-radius: 12px;" alt="otarea-sitepage">
+                </a>
+                <p class="" style="line-height: 3;">It is a Basic Page of Otarea Educore using HTML, CSS.</p>
+                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://otarea-educore-clone.netlify.app/" target="_blank">Check it out ></a></span>
+            </div>
+
+            <div class="d-flex flex-column justify-content-between">
+                <p class="fs-1 fw-bolder">Portfolio Using Bootstrap.</p><hr style="margin-top: -12px;">
+                <a class="minor-project-1-a" style="width: 400px;" href="https://bootstrap-portfolio-gray.vercel.app/" target="_blank">
+                    <img src="images/minor-project-2-icon.png" style="width: 400px; height: 210px; border-radius: 12px;"  alt="otarea-sitepage">
+                </a>
+                <p class="" style="line-height: 3;">It is a Basic Portfolio Using HTML & Bootstrap.</p>
+                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://bootstrap-portfolio-gray.vercel.app/" target="_blank">Check it out ></a></span>
+            </div>
+        </div>
 
     </div>
 
@@ -317,9 +362,6 @@
             </a>
         </div>
     </div>
-
-    
-    
 
 </body>
 </html>

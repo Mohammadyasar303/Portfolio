@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasar's Portfolio</title>
+  <link rel="icon" href="images/icon.png" type="image">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <style>
+    /* Prevent horizontal scroll */
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    /* General styles */
+    a:hover, button:hover {
+      transform: scale(1.1);
+      transition: 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .icons:hover {
+      transform: scale(1.2);
+    }
+
+    nav {
+      z-index: 1;
+    }
+
+    .minor-project-1-a {
+      box-shadow: 1px 1px 10px 1px rgb(55, 54, 54);
+      border-radius: 10px;
+    }
+
+    .minor-project-1-a:hover {
+      transform: scale(1.07);
+    }
+
+    .minor-project-1-span a {
+      border-radius: 20px;
+    }
+
+    .minor-project-1-span:hover {
+      transform: scale(0.9);
+    }
+
+    .major-project-img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      #nav-bar {
+        display: none !important;
+      }
+
+      #home {
+        flex-direction: column !important;
+        align-items: center;
+        width: 100% !important;
+        padding: 20px;
+      }
+
+      #home-text p {
+        width: 100% !important;
+      }
+
+      .mp {
+        flex-direction: column !important;
+        width: 100% !important;
+        text-align: center;
+      }
+
+      .mp img {
+        width: 90% !important;
+        height: auto !important;
+      }
+    }
+  </style>
+
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <nav id="nav-bar" class="navbar bg-dark fixed-top rounded-bottom py-3">
+    <div class="container d-flex justify-content-between">
+      <div>
+        <a class="text-white text-decoration-none mx-2" href="#home">Home</a>
+        <a class="text-white text-decoration-none mx-2" href="#git">Experience</a>
+        <a class="text-white text-decoration-none mx-2" href="#t">Skills</a>
+        <a class="text-white text-decoration-none mx-2" href="#rw">Minor Projects</a>
+        <a class="text-white text-decoration-none mx-2" href="#cs">Major Projects</a>
+      </div>
+      <div>
+        <a class="text-white mx-2" href="https://linkedin.com/in/yasar-mansuri-41507024a" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a class="text-white mx-2" href="https://github.com/Mohammadyasar303" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        <a class="text-white mx-2" href="mailto:yasarmansuri16@gmail.com" target="_blank"><i class="far fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="d-flex justify-content-center align-items-center flex-wrap mt-5 pt-5">
+    <div id="home-text" class="p-4">
+      <p class="fs-4 fw-light">Hello, I am <b>Mohammadyasar Mansuri</b>.<br><br>
+        I am a MERN Developer. You can check my skills, projects, and experience through my Resume or the Portfolio.
+      </p>
+      <a href="https://resume-virid-kappa-66.vercel.app/" target="_blank" class="btn btn-success fw-bold">My Resume</a>
+    </div>
+    <div id="home-img" class="p-4">
+      <img src="images/profile.png" class="rounded-circle" style="width: 190px;">
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="git" class="bg-white text-black py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold">Experience</h2>
+      <p class="w-75 mx-auto">I have worked as a <b>Software Development Trainee</b> at <b>Acciojob Pvt Ltd</b>. I also completed my <b>Bachelor's in Computer Applications</b> at <b>Parul University</b>.</p>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="card col-md-3 m-2 shadow-sm">
+          <div class="card-body text-center">
+            <i class="fas fa-briefcase fa-2x text-primary mb-3"></i>
+            <h5 class="fw-bold">Software Development Trainee</h5>
+            <p>Acciojob Pvt Ltd.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="t" class="bg-light text-dark py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold">Skills</h2>
+      <p>I have knowledge of these web development skills:</p>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="m-3 icons">
+          <p class="fw-bold">HTML</p>
+          <img src="images/HTML-icon.png" width="100" height="100">
+        </div>
+        <div class="m-3 icons">
+          <p class="fw-bold">CSS</p>
+          <img src="images/CSS-icon.png" width="100" height="100">
+        </div>
+        <div class="m-3 icons">
+          <p class="fw-bold">JavaScript</p>
+          <img src="images/JS-icon.png" width="100" height="100">
+        </div>
+        <div class="m-3 icons">
+          <p class="fw-bold">React JS</p>
+          <img src="images/React-icon.png" width="120" height="100">
+        </div>
+        <div class="m-3 icons">
+          <p class="fw-bold">Bootstrap</p>
+          <img src="images/Bootstap-icon.png" width="130" height="100">
+        </div>
+        <div class="m-3 icons">
+          <p class="fw-bold">Node.js</p>
+          <img src="images/nodeJS-icon.png" width="130" height="100">
+        </div>
+        <div class="m-3 icons">
+          <p class="fw-bold">MongoDB</p>
+          <img src="images/MongoDB-icon.png" width="130" height="100">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Major Projects Section -->
+  <section id="cs" class="bg-black text-white py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold">Major Projects</h2>
+      <p>I have created some major projects using my web development skills.</p>
+
+      <div class="mp d-flex align-items-center my-5">
+        <div>
+          <span class="badge bg-warning mb-2">Project 5</span>
+          <h3>YouTube Clone</h3>
+          <p>Built using JavaScript (DOM), HTML, CSS, and Google Console APIs.</p>
+          <a class="btn btn-warning" href="https://you-tube-clone-five-opal.vercel.app/" target="_blank">View Project</a>
+        </div>
+        <div>
+          <a href="https://you-tube-clone-five-opal.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-5.png" width="400" alt=""></a>
+        </div>
+      </div>
+
+      <!-- Similarly add more projects -->
+    </div>
+  </section>
+
+</body>
+</html>
