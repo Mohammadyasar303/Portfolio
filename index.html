@@ -14,7 +14,12 @@
         @media (max-width: 768px) {
             
             #nav-bar{
-                display: none !important;
+                width: 100% !important;
+                height: 70px !important;
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                z-index: 1 !important;
             }
 
             #home{
@@ -119,10 +124,11 @@
                 width: 75% !important;
             }
 
-            .skill-all{
+            .skill-all {
                 display: grid !important;
-                grid-template-columns: repeat(2, 1fr) !important;
+                grid-template-columns: repeat(2, 1fr) !important; /* Two columns for larger screens */
                 align-items: center !important;
+                gap: 20px; /* Add spacing between cards */
                 margin-right: 40px;
             }
 
@@ -138,6 +144,35 @@
 
             .skill-p1{
                 width: 60% !important;
+            }
+
+            .navbar-tags{
+                display: none !important;
+            }
+
+            #nav-bar{
+                width: 250px !important;
+                margin-top: 10px;
+                margin-left: 70px !important;
+                border-radius: 50px !important;
+            }
+
+            .navbar-socials{
+                margin-right: 50px;
+            }
+
+            #home{
+                display: flex;
+                flex-direction: column-reverse !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            #home-text a{
+                background-color: rgb(55, 54, 54) !important;
+                width: 50px !important;
+                font-size: medium !important;
+                margin-top: 20px !important;
             }
         }
 
@@ -194,7 +229,7 @@
     
         <!-- NAVBAR -->
         <nav id="nav-bar" class=" navbar bg-dark d-flex justify-content-center align-items-center mx-5 rounded-bottom" style="height: 75px; position: fixed; top: 0;">
-            <div class="pe-5">
+            <div class="pe-5 d-flex align-items-center navbar-tags">
                 <a class="text-decoration-none ps-5 pe-3 text-white" href="#h">Home</a>
                 <a class="text-decoration-none px-3 text-white" href="#git">Experience</a>
                 <a class="text-decoration-none px-3 text-white" href="#t">Skills</a>
@@ -202,7 +237,7 @@
                 <a class="text-decoration-none px-3 text-white" href="#cs">Major Projects</a>
             </div>
 
-            <div class="ps-5 d-flex align-items-center">
+            <div class="ps-5 d-flex align-items-center navbar-socials">
                 <a class="px-3" href="https://linkedin.com/in/yasar-mansuri-41507024a" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #e6e6e6;"></i></a>
                 <a class="px-3" href="https://github.com/Mohammadyasar303" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #fcfcfc;"></i></a>
                 <a class="px-3" href="mailto:yasarmansuri16@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i></a>
@@ -214,7 +249,7 @@
         <div id="home" class="text-capitalize w-50 d-flex align-items-center mt-5 mb-5 pb-5">
             <div id="home-text" class="text-white pt-5">
                 <!-- <p class="fs-1 fw-bolder">Mohammadyasar Mansuri.</p> -->
-                <p class="fs-5 lh-2 w-75 fw-lighter">Hello, I Am <b>Mohammadyasar Mansuri</b>.</br></br> I Am a MERN Developer, For knowing my skills, projects, experience you can go through my Resume or you can check out my rest of the Portfolio.  </p>
+                <p class="ms-1"><b class="lh-sm name" style="font-size: xx-large;"><p>Hi, I Am</p> Mohammadyasar Mansuri.</b></br></br> I Am a MERN Developer, For knowing my skills, projects, experience you can go through my Resume or you can check out my rest of the Portfolio.  </p>
                 <a href="https://resume-virid-kappa-66.vercel.app/" download="Mohammadyasar_SD_Resume.pdf" target="_blank" class="text-decoration-none rounded-3 py-2 px-4 m bg-success fs-5 text-white fw-bold">My Resume</a>
             </div>
 
@@ -287,7 +322,7 @@
             <div class="shadow p-3 mb-5 rounded mx-5 icons">
                 <p class="fw-bolder">React JS</p>
                 <img class="" src="images/React-icon.png" width="120px" height="100px" alt="React-icon">
-            </div><br>
+            </div>
 
             <div class="shadow p-3 mb-5 rounded mx-5 icons">
                 <p class="fw-bolder">Bootstrap</p>
