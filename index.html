@@ -13,19 +13,20 @@
         /* Media query for devices with max width of 768px (tablets and smaller) */
         @media (max-width: 768px) {
             
-            #nav-bar{
-                width: 100% !important;
-                height: 70px !important;
-                position: fixed !important;
-                top: 0 !important;
-                left: 0 !important;
-                z-index: 1 !important;
-            }
+            /* home section responsive design css--------------------------------------------------------------------------------------------------- */
 
             #home{
+                display: flex;
+                flex-direction: column-reverse !important;
                 width: 100% !important;
-                display: flex !important;
-                flex-direction: column !important;
+                text-align: center !important;
+            }
+
+            #home-text a{
+                background-color: rgb(55, 54, 54) !important;
+                width: 50px !important;
+                font-size: medium !important;
+                margin-top: 20px !important;
             }
 
             #home-text p{
@@ -78,6 +79,19 @@
                 width: 100% !important;
             }
 
+            /* major project part css for responsive----------------------------------------------------------------------------------------- */
+
+            #mp{
+                margin-top: -40px;
+            }
+
+            .major-responsive-a_img a{
+
+                width: 390px !important;
+                display: flex !important;
+                align-items: center !important;
+            }
+
             .major-even{
                 width: 100% !important;
                 display: flex !important;
@@ -116,6 +130,20 @@
                 margin-bottom: 20px !important;
             }
 
+            .major-text-a{
+                display: flex !important;
+                width: 190px !important;
+                justify-content: space-between !important;
+            }
+
+            .major-text-a a{
+                height: 35px !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                border-radius: 10px !important;
+            }
+
             .major-text-p2{
                 width: 95% !important;
             }
@@ -123,6 +151,8 @@
             .major-text-p0{
                 width: 75% !important;
             }
+
+            /* Skill past responsive css------------------------------------------------------------------------------------------------------------------- */
 
             .skill-all {
                 display: grid !important;
@@ -150,32 +180,36 @@
                 display: none !important;
             }
 
+            /* navbar responsive css----------------------------------------------------------------------------------------------------------------- */
+
             #nav-bar{
+                display: flex !important;
+                justify-content: center !important;
                 width: 250px !important;
                 margin-top: 10px;
-                margin-left: 70px !important;
                 border-radius: 50px !important;
+
             }
 
             .navbar-socials{
                 margin-right: 50px;
             }
-
-            #home{
-                display: flex;
-                flex-direction: column-reverse !important;
-                width: 100% !important;
-                text-align: center !important;
-            }
-
-            #home-text a{
-                background-color: rgb(55, 54, 54) !important;
-                width: 50px !important;
-                font-size: medium !important;
-                margin-top: 20px !important;
-            }
         }
 
+        .major-text-a{
+                display: flex !important;
+                width: 190px !important;
+                justify-content: space-between !important;
+            }
+
+            .major-text-a a{
+                height: 35px !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                border-radius: 10px !important;
+                color: #ffffff !important;
+            }
 
         /* Add hover effect for all anchor tags */
         a:hover {
@@ -352,11 +386,15 @@
 
         <div id="mp" class="pt-5  pb-5 w-50 d-flex justify-content-evenly align-items-center major-whole major-odd">
             <div class="major-odd-text">
-                <span class="p-1 me-5 rounded-3">Project-1</span>
+                <!-- <span class="p-1 me-5 rounded-3">Project-1</span> -->
                 <p class="fs-2">YouTube Clone</p><hr style="width: 300px;">
                 <p class="w-75 major-text-p2">It is a YouTube Clone using Asynchrounus & DOM JavaScript, HTML, CSS & Google Console APIs. </p>
-                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://you-tube-clone-five-opal.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
-                <a href="https://youtube.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+                
+                <div class="major-text-a">
+                    <a class="border border-black text-decoration-none text-black p-2" href="https://you-tube-clone-five-opal.vercel.app/" target="_blank" style="border-radius: 20px; background-color: red;">Check it out</a><br><br>
+                    <a href="https://youtube.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: red; text-decoration: none;">Reference</a>
+                </div>
+                
             </div>
 
             <div>
@@ -370,21 +408,29 @@
             </div>
 
             <div class="ps-5 major-even-text">
-                <span class="p-1 rounded-3 bg-primary">Project-2</span>
+                <!-- <span class="p-1 rounded-3 bg-primary">Project-2</span> -->
                 <p class="fs-2">Google Sheet Clone</p><hr>
                 <p class="w-75 major-text-p2">It is a Google Sheet Clone using JavaScript DOM, HTML, CSS.</p>
-                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://google-sheet-clone-six.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
-                <a href="https://docs.google.com/spreadsheets/d/10fp30vp1JytmrGz7rnXX8d5xOCSmD-v5hQ4N3eFBcxs/edit?gid=0#gid=0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+                
+                <div class="major-text-a">
+                    <a class="border border-black text-decoration-none text-black p-2" href="https://google-sheet-clone-six.vercel.app/" target="_blank" style="border-radius: 20px; background-color: #007bff;">Check it out</a><br><br>
+                    <a href="https://docs.google.com/spreadsheets/d/10fp30vp1JytmrGz7rnXX8d5xOCSmD-v5hQ4N3eFBcxs/edit?gid=0#gid=0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: #007bff; text-decoration: none;">Reference</a>
+                </div>
+                
             </div>
         </div><hr style="width: 760px;">
 
         <div id="mp" class="pt-5  pb-5 w-50 d-flex justify-content-evenly align-items-center major-whole major-odd">
             <div class="major-odd-text">
-                <span class="p-1 me-5 rounded-3 bg-success">Project-3</span>
+                <!-- <span class="p-1 me-5 rounded-3 bg-success">Project-3</span> -->
                 <p class="fs-2">Blinkit Clone</p><hr style="width: 300px;">
                 <p class="w-75 major-text-p2">It is a Blinkit Clone using HTML for Structure & Bootstrap and little bit inline CSS. </p>
-                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://blinkit-clone-teal.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
-                <a href="https://blinkit.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+                
+                <div class="major-text-a">
+                    <a class="border border-black text-decoration-none text-black p-2" href="https://blinkit-clone-teal.vercel.app/" target="_blank" style="border-radius: 20px; background-color: yellowgreen;">Check it out</a><br><br>
+                    <a href="https://blinkit.com/" target="_blank" style="padding: 5px; border-radius: 20px; background-color: yellowgreen; text-decoration: none;">Reference</a>
+                </div>
+                
             </div>
 
             <div>
@@ -393,32 +439,40 @@
         </div><hr style="width: 760px;">
 
         <div id="mp" class="pt-5 w-50 d-flex justify-content-evenly align-items-center major-whole major-even">
-            <div>
+            <div class="major-responsive-a_img">
                 <a href="https://responsive-web-page-nu.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-2.png" width="400px" alt="responsive-img" style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
             </div>
 
             <div class="ps-5 major-even-text">
-                <span class="p-1 rounded-3 bg-primary">Project-4</span>
+                <!-- <span class="p-1 rounded-3 bg-primary">Project-4</span> -->
                 <p class="fs-2">Responsive Web Page</p><hr>
                 <p class="w-75 major-text-p2">It is a Responsive Web Page for Mobile, Tablet using HTML and CSS-Media Query.</p>
-                <a class="bg-warning border border-black text-decoration-none text-black p-2" href="https://responsive-web-page-nu.vercel.app/" target="_blank" style="border-radius: 20px;">Check it out ></a><br><br>
-                <a href="https://www.figma.com/design/EJG7TkLezxUaSHTgi2fqIr/F1---Monthly-Test?node-id=2-6&t=MSSLAf7octUUf0BU-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+                
+                <div class="major-text-a">
+                    <a class="border border-black text-decoration-none text-black p-2" href="https://responsive-web-page-nu.vercel.app/" target="_blank" style="border-radius: 20px; background-color: saddlebrown;">Check it out</a><br><br>
+                    <a href="https://www.figma.com/design/EJG7TkLezxUaSHTgi2fqIr/F1---Monthly-Test?node-id=2-6&t=MSSLAf7octUUf0BU-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: saddlebrown; text-decoration: none;">Reference</a>    
+                </div>
+                
             </div>
         </div><hr style="width: 760px;">
 
-        <div id="mp" class="pt-5 w-50 d-flex justify-content-evenly align-items-center major-project-1-div major-whole major-odd">
+        <div id="mp" class="pt-5 mb-5 w-50 d-flex justify-content-evenly align-items-center major-project-1-div major-whole major-odd">
             <div class="major-odd-text">
-                <span class="p-1 rounded-3 text-black major-project-1-span" style="background-color: rgb(31, 133, 13);">Project-5</span>
+                <!-- <span class="p-1 rounded-3 text-black major-project-1-span" style="background-color: rgb(31, 133, 13);">Project-5</span> -->
                 <p class="fs-2">Spotify Clone.</p><hr style="width: 360px;">
                 <p class="w-75 major-text-p2">It is a basic spotify UI for Home Page & Liked Songs Page Using HTML, CSS.</p>
-                <a class="border border-black text-decoration-none text-black p-2 minor-project-1-span" href="https://spotify-clone-liard-kappa.vercel.app/" target="_blank" style="border-radius: 20px; background-color: rgb(31, 133, 13);">Check it out ></a><br><br>
-                <a class="major-project-1-a2" href="https://www.figma.com/design/EBhnjMShbYAgpeGweiW1m3/Spotify-Clone?node-id=8-293&t=uPRTKBCgKo7iVaKQ-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: azure; text-decoration: none;">Reference ></a>
+                
+                <div class="major-text-a">
+                    <a class="border border-black text-decoration-none p-2" href="https://spotify-clone-liard-kappa.vercel.app/" target="_blank" style="border-radius: 20px; background-color: green; color: #ffffff;">Check it out</a><br><br>
+                    <a class="major-project-1-a2" href="https://www.figma.com/design/EBhnjMShbYAgpeGweiW1m3/Spotify-Clone?node-id=8-293&t=uPRTKBCgKo7iVaKQ-0" target="_blank" style="padding: 5px; border-radius: 20px; background-color: green; text-decoration: none; color: #ffffff;">Reference</a>    
+                </div>
+                
             </div>
 
             <div>
                 <a href="https://spotify-clone-liard-kappa.vercel.app/" target="_blank"><img class="major-project-img" src="images/major-project-1.png" width="400px" alt="spotify-clone"  style="box-shadow: 1px 1px 10px 1px whitesmoke; border-radius: 10px;"></a>
             </div>
-        </div><hr style="width: 760px;">
+        </div>
     </div>
 
     <!-- Minor Projects -->
@@ -436,7 +490,7 @@
                     <img src="images/otarea-sitepage.png" style="width: 400px; height: 210px; border-radius: 12px;" alt="otarea-sitepage">
                 </a>
                 <p class="minor-project-p2" style="line-height: 3;">It is a Basic Page of Otarea Educore using HTML, CSS.</p>
-                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://otarea-educore-clone.netlify.app/" target="_blank">Check it out ></a></span>
+                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://otarea-educore-clone.netlify.app/" target="_blank" style="border-radius: 10px;">Check it out</a></span>
             </div>
 
             <div class="d-flex flex-column justify-content-between">
@@ -445,7 +499,7 @@
                     <img src="images/minor-project-2-icon.png" style="width: 400px; height: 210px; border-radius: 12px;"  alt="otarea-sitepage">
                 </a>
                 <p class="minor-project-p2" style="line-height: 3;">It is a Basic Portfolio Using HTML & Bootstrap.</p>
-                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://bootstrap-portfolio-gray.vercel.app/" target="_blank">Check it out ></a></span>
+                <span class="minor-project-1-span" style="width: 116px; line-height: 0;"><a class="bg-success p-2 text-white text-decoration-none" href="https://bootstrap-portfolio-gray.vercel.app/" target="_blank" style="border-radius: 10px;">Check it out</a></span>
             </div>
         </div>
 
